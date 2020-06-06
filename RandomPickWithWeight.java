@@ -6,7 +6,7 @@ public class RandomPickWithWeight {
     int[] accumulatedSum;
      Random random;
      
-    public Solution(int[] w) {
+   /* public Solution(int[] w) {
         random = new Random();
         accumulatedSum = new int[w.length];
         int currSum = 0;
@@ -14,7 +14,7 @@ public class RandomPickWithWeight {
             currSum += w[i];
             accumulatedSum[i] = currSum;
         }
-    }
+    } */
     
     public int pickIndex() {
          int target = random.nextInt(accumulatedSum[accumulatedSum.length - 1]) + 1;
